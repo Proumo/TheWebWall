@@ -1,0 +1,631 @@
+body{
+   
+}
+.userNickname{
+    position: absolute;
+    font-size: 13px;
+    margin:5px;
+    top:40px;
+    left:50px;
+}
+.loaderContainer{
+    width:300px;
+    height:100px;
+}
+.loaderContainer .loader{
+    margin:40px;
+}
+.pessoasQueSigoContainer{
+    height:200px;
+    width: 300px;
+    overflow-y: scroll;
+    background-image:url("../images/fundo1.1.jpg"); 
+    display: inline-block;
+    
+}
+#notificacoes{
+    display: none;
+}
+#msgPost{
+    display: none;
+}
+.novosPosts{ 
+   position:relative;
+    background-color: red;
+    max-height: 15px;
+    min-width:fit-content;
+    border-radius: 3px;
+    margin-left: 5px;
+    display:inline-table;
+    padding-left: 2px;
+    padding-right: 2px;
+    }
+.novosPosts label{
+    font-size: 5px;
+    position:relative;
+   color: white;
+   padding:0px;
+   margin:0px;
+  
+}
+.novoMarca{
+    position: absolute;
+    z-index: 40;
+    background-color: red;
+    max-height: 13px;
+    width:100%;
+    border-radius:3px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.8),0 0px 15px rgba(0,0,0,0.8);    
+}
+.novoMarca label{
+    position:relative;
+    font-size: 10px;
+        color: white;
+        margin:0px;
+        top:0px;
+        left:17px;
+        
+}
+.btnMove{
+ 
+    border-radius: 15px;
+    position:relative;
+}
+.up{
+    top: 4px;
+    left:78px;
+}
+.down{
+    left:-10px;
+    top:50px;}
+.left{
+    top:28px;
+    left:-20px;
+}
+.right{
+    top:28px;
+    left:3px;
+}
+.moveControl{
+    position:relative;
+    height:80px;
+    width:60%;
+    display: block;
+    background-color: #ccccff;
+    border-radius: 50%;
+    padding-right: 13px;
+    margin-bottom: 6px;
+    <!--display: none;-->
+}
+
+.inferior{
+    position: absolute;
+    display: none;
+    bottom: 0px;
+    height: 110px;
+    padding-bottom: 8px;
+    padding-top: 10px;
+    width: 55%;
+    min-width: 620px;
+    margin-left:8%;
+    box-shadow: 0 0 40px rgba(0,0,0,0.8),0 0px 40px rgba(0,0,0,0.8);
+    z-index: 45;
+    
+}
+.inferior #userName {
+ width: available;
+ color:white;
+ top:12px;
+
+}
+
+
+.postsContainerInferior{
+    position: absolute;
+    -ms-overflow-x: hidden;
+    -ms-overflow-y: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 80px;
+    width: 80%;
+    left:150px;
+    top:40px;
+    z-index: 3;
+    
+    
+    
+}
+
+.btn-custom {
+ background-color: hsl(24, 24%, 14%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#acbacc", endColorstr="#1b222c");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#acbacc), to(#1b222c));
+  background-image: -moz-linear-gradient(top, #acbacc, #1b222c);
+  background-image: -ms-linear-gradient(top, #acbacc, #1b222c);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #acbacc), color-stop(100%, #1b222c));
+  background-image: -webkit-linear-gradient(top, #acbac, #1b222c);
+  background-image: -o-linear-gradient(top, #acbacc, #1b222c);
+  background-image: linear-gradient(#acbacc, #1b222c);
+  border-color: #1b222c #1b222c hsl(215, 24%, -1%);
+  -webkit-font-smoothing: antialiased;
+}
+.titulosecao {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+    border-radius: 50px;
+  background-color: hsl(201, 26%, 45%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bbcdd7", endColorstr="#547b90");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#bbcdd7), to(#547b90));
+  background-image: -moz-linear-gradient(top, #bbcdd7, #547b90);
+  background-image: -ms-linear-gradient(top, #bbcdd7, #547b90);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #bbcdd7), color-stop(100%, #547b90));
+  background-image: -webkit-linear-gradient(top, #bbcdd7, #547b90);
+  background-image: -o-linear-gradient(top, #bbcdd7, #547b90);
+  background-image: linear-gradient(#bbcdd7, #547b90);
+  border-color: #547b90 #547b90 hsl(201, 26%, 36.5%);
+  color: #333 !important;
+  text-shadow: 0 1px 4px rgba(255, 255, 255, 0.8);
+  -webkit-font-smoothing: antialiased;
+  
+  
+}
+.folksSearch{
+    height:30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.folksSearch label{
+    color: white;
+    padding: 0px;
+    font-size: 11px;
+}
+.folksSearch input{
+    margin-bottom: 2px;
+}
+.userInfoAutor{
+   float: left;
+   margin: 2px;
+   display: block;
+   width: 200px;
+   height:60px;
+   box-shadow: 0 0 40px rgba(0,0,0,0.8),0 0px 40px rgba(0,0,0,0.8);
+}
+.searchResultContainer{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -ms-overflow-y: scroll;
+    -ms-overflow-x: hidden;
+    height:390px;
+}
+.descricao{
+max-height: 200px;
+max-width:  300px;
+font-family: sans-serif;
+color: white;
+position:relative;
+overflow-wrap: break-word;
+margin:0px;
+
+}
+
+.argumentoContainer1{
+position:relative;
+float:left;
+width: 55%;
+min-width: 260px;
+overflow-wrap: break-word;
+display:inline-block;
+z-index: 5;
+color:white;
+    
+}
+
+.argumentoContainer{
+position:relative;
+float:right;
+right:20px;
+display:inline-block;
+z-index: 5;
+width: 40%;
+    
+}
+
+
+.numViews{
+    size: 8px;
+    color: #ccc;
+    position:relative;
+  
+    
+}
+.comentario img{
+    position: relative;
+    max-height: 40px;
+    max-width: 60px;
+    top:0px;
+    left:0px;
+    float: left;
+    margin-right:4px;
+    z-index: 8;
+}
+.comentario input{
+    max-width: 200px;
+    min-width: 100px;
+}
+.comentario{
+    position: relative;
+    padding: 4px;
+    padding-bottom: 10px;
+    background-color: #acbacc;
+    margin: 2px;
+    
+    width: 90%;
+    min-width: 263px;
+    
+   
+}
+.comentario label{
+    position: relative;
+   font-size: 12px;
+   float: left;
+   float: top;
+   margin-top: 2px;
+   font-weight: bold;
+   line-height: 13px;
+   margin-bottom: 0px;
+   
+}
+
+.comentariosContainer{
+    display: inline-block;
+    max-width: 300px;
+    min-width: 100px;
+    overflow-y: scroll;
+    max-height: 250px;
+    min-height: 100px;
+    overflow-x: hidden;
+    position:relative;
+   
+}
+
+.comentarioTexto{
+    display:block;
+    position:relative;
+    font-size: 11px;
+    padding-top:16px;
+    padding-bottom:6px;
+    left:4px;
+    top: 4px;
+    line-height: 11px;
+    width: 90%;
+    overflow-wrap: normal;
+    word-break: break-all;
+    
+
+}   
+.tituloPost label{
+    
+    width: 100%;
+    height: 15%;
+    font-size: 32px;
+    margin-top:15px;
+    margin-bottom:15px;
+    font-weight: bold;
+    text-shadow: 0 0 40px rgba(255,255,255,0.8),0 0px 40px rgba(255,255,255,0.8);
+}
+
+.imagePostInfo{
+    position:relative;
+    max-height: 100%;
+    max-width: 100% ;
+    min-height: 40px;
+    min-width: 30px;
+    
+    
+    
+  
+}
+
+#imagePostInfoBackground{
+   width: 100%;
+   background-image: url("../images/fundo1.1.jpg");
+   border-radius: 15px;
+   min-height: 200px;
+   max-height: 370px;
+   max-width: 480px;
+   min-width: 230px;
+  overflow-y: hidden;
+  -ms-overflow-y: hidden;
+}
+.leftmenu{      padding: 10px;
+                position: absolute;
+                top:10px;
+                right: 10px;
+                z-index: 8;
+                width:300px;
+                box-shadow: 0 0 40px rgba(0,0,0,0.8),0 0px 40px rgba(0,0,0,0.8);
+            }
+            .btn-editarPost{
+                position: absolute;
+                color: white;
+                bottom: 0px;
+                right: 0px;
+                border-radius: 50px;
+                
+            }
+            .btn-control{
+                margin-right: 5px;
+                position:relative;
+                float: right;
+                top:8px;
+            }
+            .userInfo{
+                      padding: 10px;  
+                      height:70px;
+                      max-width: 275px;
+                      min-width: 100px;
+             
+                
+            }
+            .userInfo .btn{
+                position: relative;
+                float: right;
+                bottom: 8px;
+                margin-top:10px;
+            }
+          
+            
+            .userInfo1{
+                      padding: 3px;  
+                      height:60px;
+                      margin:3px;
+                      
+                
+            }
+            .userInfo1 label{
+                font-size: 14px;
+            }
+            .userInfo1.btn{
+                position:relative;
+                bottom: 0px;
+            }
+            
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.8),0 0px 5px rgba(0,0,0,0.8);
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+    
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.8); 
+}
+            
+            
+
+#demo2_viewport {
+                overflow:hidden;
+                color:#fff;
+                border:0px;
+                background-color:#000;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background-image: url("../images/fundo1.1.jpg"); 
+            }
+            
+            #demo2_wall ._tile {
+                min-height: 200px;
+                min-width: 200px;
+                
+            }
+           
+            
+            /* Styling for Infinite Drag elements */
+            .viewport {
+                overflow: hidden;
+                width: 100%;
+                height: 100px;
+                color: #fff;
+                border: 1px solid #ccc;
+                background-color: #00a;
+                
+            }
+
+
+         
+            
+            .userImg{
+                position: relative;
+                max-width: 60px;
+            }
+            .userImgBkgd{
+                position:absolute;
+                width: 60px;
+                height:70px;
+                overflow: hidden;
+                margin-right:0px;
+                   
+            }
+            .friendImg{
+                position: relative;
+             max-width: 60px;
+             max-height:60px;
+             overflow: hidden;
+                
+                float:left;
+            margin-right:7px;
+            left:4px;
+                
+            }
+            
+            friendContainer{
+                padding: 0px;
+                height:60px;
+                
+            }
+            
+            img.postagem{
+      
+                position: relative;
+                margin: auto;    
+                max-height:95%;
+                max-width:95%;
+                min-height: 20%;
+                min-width: 20%;
+               
+         
+               
+            }
+            .postInfoFrame {
+                margin-top:2%;
+                margin-left: 6%;
+                height: 70%;
+                width: 55%;
+                max-height: 700px;
+                max-width: 900px;
+                position: absolute;
+                padding: 12px;
+                display:none;
+                box-shadow: 0 0 40px rgba(0,0,0,0.8),0 0px 40px rgba(0,0,0,0.8);
+                
+            }
+            .postInfoFrame #userCountry{
+                position:absolute;
+                left:70px;
+                top:30px;
+            }
+            .postInfoFrame #userName{
+                position: absolute;
+                padding-top: 0px;
+                padding-bottom: 0px;
+                font-family: arial;
+                font-size: 19px;
+                font-weight: bold;
+                left:70px;
+                top:10px;
+            }
+            .close{
+                position: relative;
+                float:right;
+                float:top;
+                margin:4px;
+                z-index: 8;
+            }
+            
+              
+          
+                
+            
+            #meusPosts{
+                height:200px;
+                overflow-y: scroll;
+                background-image:url("../images/fundo1.1.jpg"); 
+                display: none;
+            }
+            #novopostDiv{
+                display: none;
+            }
+            #folks{
+                display:none;
+                
+            }
+            .folksContainer{
+                overflow-y: scroll;
+                height:200px;
+            }
+            #userName{
+                position: absolute;
+                padding-top: 0px;
+                padding-bottom: 0px;
+                font-family: arial;
+                font-size: 19px;
+                font-weight: bold;
+                left:70px;
+                top:20px;
+                
+            }
+            #userCountry{
+                position:absolute;
+                font-family:arial;
+                font-size: 11px;
+                color: gray;
+                max-width: 200px;
+                line-height: 12px;
+                left:70px;
+                top:40px;               
+            }
+            
+            .userPosts{
+                
+                position: relative;
+                float: left;
+                width:60px;
+                height:60px;
+                border-radius: 7px;
+                margin:3px;
+                overflow: hidden;
+                box-shadow: 0 0 10px rgba(0,0,0,0.8),0 0px 5px rgba(0,0,0,0.8);
+                display:block;
+                
+                
+            }
+            .userPostsThumb{
+                min-height: 60px;
+                min-width: 60px;
+                
+            }
+            #userNumPosts{
+                position:absolute;
+                left:80px;
+                top:50px;
+                color: whitesmoke;
+            }
+            .novosComentarios{
+                position: absolute;
+                z-index: 40;
+                background-color: red;
+                max-height: 15px;
+                min-width:15px;
+                width:20px;
+                bordemax-r-radius:3px;
+                box-shadow: 0 0 15px rgba(0,0,0,0.8),0 0px 15px rgba(0,0,0,0.8);
+                top:46px;
+                border-radius: 4px;
+            }
+            
+            .novosComentarios label{
+                position:relative;
+                font-size: 10px;
+                color: white;
+                margin:0px;
+                top:0px;
+                left:5px;
+                bottom:8px;
+                }
+            .inferior.userPosts{
+                
+                float:none;
+                width:60px;
+                height:60px;
+                margin:3px;
+                overflow: hidden;  
+                display: table;
+                padding:0px;
+                
+                
+                
+            }
+            
