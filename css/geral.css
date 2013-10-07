@@ -1,6 +1,14 @@
 body{
    
 }
+.btn-lateral{
+    position: absolute;
+    z-index: 40;
+    color: #333333;
+    font-weight: bold;
+    bottom: 0px;
+
+}
 .userNickname{
     position: absolute;
     font-size: 13px;
