@@ -1,5 +1,5 @@
 <?php
-//require 'controller/restrito.php'; //validaçao de login
+require 'controller/restrito.php'; //validaçao de login
 require 'lang/pt-BR.php';
 if(isset($_GET['x'])){
 $x=  intval($_GET['x']);
