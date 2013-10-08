@@ -4,10 +4,10 @@ body{
 .btn-lateral{
     position: absolute;
     z-index: 40;
-    color: #333333;
+    /*color: #333333;*/
     font-weight: bold;
-    bottom: 0px;
-
+    /*bottom: 0px;*/
+    margin-left: 39%;
 }
 .userNickname{
     position: absolute;
