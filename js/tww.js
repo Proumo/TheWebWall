@@ -5,6 +5,7 @@ window.onclose=function(){
 var loader="<div class='well loaderContainer'><img class='loader' src='images/loader.gif'></div>";
 
 
+
 function mostrarPerfil(id){
     $("#postInfoContent").html(loader).load("controller/mostrarPerfil.php?id="+id);
     if($("#postInfo").is(":hidden")){
@@ -183,7 +184,12 @@ function imgError(image){
             }
 
             $(document).ready(function() {
-              
+              $("#feedback").click(function(){
+                  $("#postInfoContent").html('<h3>Ajude-nos a melhorar!</h3><iframe src="https://docs.google.com/forms/d/1bdf02ohht6yc4ZFCBomxPN2NjRXncVLY8vS-9jSmXy4/viewform?embedded=true" width="620" height="400" frameborder="0" marginheight="0" marginwidth="0">Carregando...</iframe>');
+                 if($("#postInfo").is(":hidden")){
+                    $("#postInfo").show();}
+              });
+
               
           
               $("#notificacoesContainer").load("controller/mostrarNotifi.php");
