@@ -46,7 +46,7 @@ $y=0;
             <div  id="faixaInferior" class="inferior well btn-custom"> 
 
             </div>
-            <div class="btn btn-info btn-lateral"><i class="icon-thumbs-up"></i> O que você está achando do site?</div>
+            <div id="feedback"class="btn btn-info btn-lateral"><i class="icon-thumbs-up"></i> O que você está achando do site?</div>
             <div id="postInfo" class=" postInfoFrame btn-custom">
                 <i class="icon-remove close" id="fechar"></i>
                 <div id="postInfoContent">             
