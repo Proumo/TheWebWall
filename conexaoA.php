@@ -1,13 +1,15 @@
 <?php
-	$server = "localhost";
-	$database = "thewebwall";
-	$login = "pma";
-	$senha= "webwebwall";
+    $url=parse_url(getenv("CLEARDB_DATABASE_URL"));
+    
+	$server = $url["host"];; //localhost
+	$database = substr($url["path"],1);//thewebwall
+	$login = $url["user"];//root
+	$senha= $url["pass"];//root
 
 	$cn= mysql_connect ($server, $login, $senha);
 	if(!$cn){
 	die('Erro ao conectar no Banco de Dados');
 	}
-	@mysql_select_db ($database) OR DIE ("Banco não encontrado.")
+	@mysql_select_db ($database) OR DIE ("Banco não encontrado.");
 	
 ?>		
