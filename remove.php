@@ -1,0 +1,5 @@
+<?php
+
+    unlink("tst.txt");
+
+?>
